@@ -1,0 +1,47 @@
+{
+  "name": "realtime-pizza",
+  "version": "1.0.0",
+  "description": "This is a realtime pizza app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "serve": "node server.js",
+    "development": "mix",
+    "watch": "npx mix watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "Rishank",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/connect-firestore": "^2.0.2",
+    "@stripe/stripe-js": "^1.22.0",
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.6.0",
+    "connect-session-firebase": "^5.13.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "firebase": "^9.6.1",
+    "firebase-admin": "^10.0.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.1.2",
+    "nodemon": "^2.0.15",
+    "noty": "^3.2.0-beta-deprecated",
+    "passport": "^0.5.2",
+    "passport-custom": "^1.1.1",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.39",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.1.0"
+  }
+}
