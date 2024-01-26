@@ -24,7 +24,8 @@ app.use(session({
     secret: process.env.COOKIE_SECRET,
     resave: false,
     store: MongoDBStore.create({
-        // mongoURL: 'mongodb://localhost:27017/pizza', // process.env.MONGO_CONNECTION_URL
+        // mongoURL: 'mongodb://localhost:27017/pizza', 
+        // process.env.MONGO_CONNECTION_URL
         client: mongoose.connection.getClient()
     }),
     saveUninitialized: false,
